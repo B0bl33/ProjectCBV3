@@ -1,0 +1,158 @@
+/* General Styling */
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  background-color: black !important;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: #c3ff00 !important;
+  opacity: 0;
+  animation: fadeSlideIn 2s forwards;
+  margin: 20px 10px;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nav-link {
+  color: white !important;
+  position: relative;
+  margin: 0 15px;
+  border-radius: 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-link:hover {
+  color: black !important;
+  background-color: #c3ff00;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* About Section Styling */
+.about-section {
+  color: #fefffc;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  font-family: 'Bungee Shade', cursive;
+  animation: textPulse 1.5s infinite;
+  text-align: center;
+}
+
+.section-description {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.about-image img {
+  border: 3px solid #c3ff00;
+  transition: transform 0.3s;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.custom-card {
+  background-color: black;
+  color: white;
+  border: 2px solid #c3ff00;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.custom-card-title {
+  color: #c3ff00;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 1.5rem;
+}
+
+.custom-card .card-text {
+  font-size: 1.2rem;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 3.5rem;
+  }
+
+  .section-description {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+.section-description {
+  text-align: center;
+  padding: 10px;
+}
+.about-image {
+  margin-top: 25px;
+}
+  
+}
+
+@media (max-width: 400px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar-nav .nav-item {
+    margin: 0 auto;
+  }
+
+
+}
